@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RideAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.alexander.ridy.Model.adapters</a>&nbsp;/&nbsp;<a href="./index.html">RideAdapter</a><br/>
+<br/>
+<h1>RideAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">RideAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-ride-holder/index.html"><span class="identifier">RideHolder</span></a><span class="symbol">&gt;</span></code>
+<p>RideAdapter forms a bridge between the UI components and the data source that fill data into the UI Component</p>
+<h3>Parameters</h3>
+<p><a name="rides"></a>
+<code>rides</code> - The list of rides which will be displayed in the journal fragment</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-ride-holder/index.html">RideHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RideHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code>
+<p>A ViewHolder describes an item view and metadata about its place within the RecyclerView</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RideAdapter</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.adapters.RideAdapter$<init>(kotlin.collections.List((com.example.alexander.ridy.Model.domain.Ride)))/rides">rides</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code>
+<p>RideAdapter forms a bridge between the UI components and the data source that fill data into the UI Component</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Function which has the size of the rides list</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-ride-at.html">getRideAt</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRideAt</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.adapters.RideAdapter$getRideAt(kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a></code>
+<p>Function which retrieves a ride at a certain position</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.adapters.RideAdapter$onBindViewHolder(com.example.alexander.ridy.Model.adapters.RideAdapter.RideHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-ride-holder/index.html"><span class="identifier">RideHolder</span></a><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.Model.adapters.RideAdapter$onBindViewHolder(com.example.alexander.ridy.Model.adapters.RideAdapter.RideHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function which binds the correct values to the correct textViews</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.adapters.RideAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewGroup</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.Model.adapters.RideAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-ride-holder/index.html"><span class="identifier">RideHolder</span></a></code>
+<p>This method is called right when the adapter is created and is used to initialize your ViewHolder</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

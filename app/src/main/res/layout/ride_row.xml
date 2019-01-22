@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/listview_selector"
+                android:layout_margin="10dp">
+
+
+    <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_bookmark_border_black_24dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/imgIcon">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="@string/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+                <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="@string/vehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+                <TextView
+                        android:id="@+id/vehicleType"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="@string/moneySaved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+                <TextView
+                        android:id="@+id/moneySaved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="@string/rideToWork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+                <TextView
+                        android:id="@+id/rideToWork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

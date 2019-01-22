@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RideRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.alexander.ridy.Model.persistence.Ride</a>&nbsp;/&nbsp;<a href="./index.html">RideRepository</a><br/>
+<br/>
+<h1>RideRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">RideRepository</span></code>
+<p>The repository adds another abstraction layer between the DAO and the ViewModel</p>
+<h3>Parameters</h3>
+<p><a name="rideDao"></a>
+<code>rideDao</code> - it requires the rideDao the perform its queries</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RideRepository</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.persistence.Ride.RideRepository$<init>(com.example.alexander.ridy.Model.persistence.Ride.RideDAO)/rideDao">rideDao</span><span class="symbol">:</span>&nbsp;<a href="../-ride-d-a-o/index.html"><span class="identifier">RideDAO</span></a><span class="symbol">)</span></code>
+<p>The repository adds another abstraction layer between the DAO and the ViewModel</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="gasolines.html">gasolines</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">gasolines</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.alexander.ridy.-model.domain/-gasoline/index.html"><span class="identifier">Gasoline</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>A list of all the gasolines, liveData is used because it can monitor changes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="rides.html">rides</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">rides</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>A list of all the rides, liveData is used because it can monitor changes</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="delete.html">delete</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">delete</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.persistence.Ride.RideRepository$delete(com.example.alexander.ridy.Model.domain.Ride)/ride">ride</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that deletes a ride into the local database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all.html">deleteAll</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that deletes all ride from the local database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-gasolines.html">deleteAllGasolines</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteAllGasolines</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that deletes all gasolines from the local database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="insert.html">insert</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.persistence.Ride.RideRepository$insert(com.example.alexander.ridy.Model.domain.Ride)/ride">ride</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that inserts a ride into the local database</p>
+<code><span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.persistence.Ride.RideRepository$insert(com.example.alexander.ridy.Model.domain.Gasoline)/gasoline">gasoline</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.alexander.ridy.-model.domain/-gasoline/index.html"><span class="identifier">Gasoline</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that inserts a gasoline into the local database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-price-gasoline.html">updatePriceGasoline</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updatePriceGasoline</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.Model.persistence.Ride.RideRepository$updatePriceGasoline(kotlin.Double, com.example.alexander.ridy.Model.domain.GasolineType)/prijs">prijs</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.Model.persistence.Ride.RideRepository$updatePriceGasoline(kotlin.Double, com.example.alexander.ridy.Model.domain.GasolineType)/gasolineType">gasolineType</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.alexander.ridy.-model.domain/-gasoline-type/index.html"><span class="identifier">GasolineType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that updates a <a href="#">price</a> from a certain <a href="update-price-gasoline.html#com.example.alexander.ridy.Model.persistence.Ride.RideRepository$updatePriceGasoline(kotlin.Double, com.example.alexander.ridy.Model.domain.GasolineType)/gasolineType">gasolineType</a> in the database</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

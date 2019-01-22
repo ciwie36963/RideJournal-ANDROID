@@ -1,0 +1,155 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RideViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.alexander.ridy.ViewModel</a>&nbsp;/&nbsp;<a href="./index.html">RideViewModel</a><br/>
+<br/>
+<h1>RideViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">RideViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.example.alexander.ridy.-model.network/-injected-view-model/index.html"><span class="identifier">InjectedViewModel</span></a></code>
+<p>Class that represents a model that can have information of a Ride Object</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RideViewModel</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Class that represents a model that can have information of a Ride Object</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="all-rides.html">allRides</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">allRides</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>a list of all the rides from the local database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="ride-repository.html">rideRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">rideRepository</span><span class="symbol">: </span><a href="../../com.example.alexander.ridy.-model.persistence.-ride/-ride-repository/index.html"><span class="identifier">RideRepository</span></a></code>
+<p>an abstraction layer that connects to the DAO for retrieving data out of the local database</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="calculate-money-saved.html">calculateMoneySaved</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">calculateMoneySaved</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$calculateMoneySaved(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/distance">distance</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$calculateMoneySaved(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/refundTravelExpensesPerKm">refundTravelExpensesPerKm</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$calculateMoneySaved(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/fuelUsagePerKm">fuelUsagePerKm</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$calculateMoneySaved(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/fuelPriceSpecificCar">fuelPriceSpecificCar</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that calculates how much money that has been saved in a ride</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete.html">delete</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">delete</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$delete(com.example.alexander.ridy.Model.domain.Ride)/ride">ride</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that deletes a ride into the local database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all.html">deleteAll</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that deletes all ride from the local database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-distance-ride.html">getDistanceRide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDistanceRide</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">&gt;</span></code>
+<p>Function that gets the local distanceRide variable</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-money-saved.html">getMoneySaved</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMoneySaved</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">&gt;</span></code>
+<p>Function that gets the local moneySaved variable</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-ride-to-work.html">getRideToWork</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRideToWork</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code>
+<p>Function that gets the local rideToWork variable</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-vehicle-type.html">getVehicleType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getVehicleType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../../com.example.alexander.ridy.-model.domain/-vehicle-type/index.html"><span class="identifier">VehicleType</span></a><span class="symbol">&gt;</span></code>
+<p>Function that gets the local vehicleType variable</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="insert.html">insert</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$insert(com.example.alexander.ridy.Model.domain.Ride)/ride">ride</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that inserts a ride into the local database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-distance-ride.html">setDistanceRide</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDistanceRide</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$setDistanceRide(kotlin.Double)/distanceRide">distanceRide</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that sets the local distanceRide variable</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-ride-to-work.html">setRideToWork</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRideToWork</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$setRideToWork(kotlin.Boolean)/rideToWork">rideToWork</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that sets the local rideToWork variable</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-vehicle-type.html">setVehicleType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setVehicleType</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.ViewModel.RideViewModel$setVehicleType(com.example.alexander.ridy.Model.domain.VehicleType)/vehicleType">vehicleType</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.alexander.ridy.-model.domain/-vehicle-type/index.html"><span class="identifier">VehicleType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that sets the local vehicleType variable</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

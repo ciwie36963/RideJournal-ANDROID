@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SelectVehicle - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.alexander.ridy.fragments.Ride</a>&nbsp;/&nbsp;<a href="./index.html">SelectVehicle</a><br/>
+<br/>
+<h1>SelectVehicle</h1>
+<code><span class="keyword">class </span><span class="identifier">SelectVehicle</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></code>
+<p>A Fragment is a section of an Activity, which has its own lifecycle, receives its own input events, can be added or removed while the Activity is running.
+This fragment takes care of representing the screen where you can select a vehicle</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-to-vehicle-screen-call-back/index.html">ToVehicleScreenCallBack</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ToVehicleScreenCallBack</span></code>
+<p>Interface that will be used between activity/fragment to go to the vehicle details screen</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">SelectVehicle</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A Fragment is a section of an Activity, which has its own lifecycle, receives its own input events, can be added or removed while the Activity is running.
+This fragment takes care of representing the screen where you can select a vehicle</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="parent.html">parent</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">parent</span><span class="symbol">: </span><a href="-to-vehicle-screen-call-back/index.html"><span class="identifier">ToVehicleScreenCallBack</span></a></code>
+<p>variable that makes it able to call the function in the ToVehicleScreenCallBack interface</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.fragments.Ride.SelectVehicle$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>This method is used to store and restore information about the state of your activity.
+In cases such as orientation changes, closing the app or any other scenario that leads to onCreate() being recalled,</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view.html">onCreateView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.fragments.Ride.SelectVehicle$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<span class="identifier">LayoutInflater</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.fragments.Ride.SelectVehicle$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewGroup</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.fragments.Ride.SelectVehicle$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">View</span><span class="symbol">?</span></code>
+<p>onCreateView is called to "inflate" the layout of the fragment,
+i.e. graphic initialization is usually done here.
+It is always called after the onCreate method.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>If the app continues after the onPause method is called, the onResume method is called.
+It is one of the methods of the activity life cycle.
+The function makes sure you can go to the Car/Bike screen by pressing a button</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="new-instance.html">newInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">newInstance</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SelectVehicle</span></a></code>
+<p>Function returns an instance of a SelectVehicle fragment</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

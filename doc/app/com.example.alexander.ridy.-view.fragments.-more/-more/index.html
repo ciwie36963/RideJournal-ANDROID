@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>More - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.alexander.ridy.View.fragments.More</a>&nbsp;/&nbsp;<a href="./index.html">More</a><br/>
+<br/>
+<h1>More</h1>
+<code><span class="keyword">class </span><span class="identifier">More</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></code>
+<p>A Fragment is a section of an Activity, which has its own lifecycle, receives its own input events, can be added or removed while the Activity is running.
+This fragment takes care of representing the more screen with some general info and a button to send eventual complaints</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">More</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A Fragment is a section of an Activity, which has its own lifecycle, receives its own input events, can be added or removed while the Activity is running.
+This fragment takes care of representing the more screen with some general info and a button to send eventual complaints</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="on-create-view.html">onCreateView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.View.fragments.More.More$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<span class="identifier">LayoutInflater</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.View.fragments.More.More$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewGroup</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.View.fragments.More.More$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">View</span><span class="symbol">?</span></code>
+<p>onCreateView is called to "inflate" the layout of the fragment,
+i.e. graphic initialization is usually done here.
+It is always called after the onCreate method.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>If the app continues after the onPause method is called, the onResume method is called.
+It is one of the methods of the activity life cycle.
+The function makes sure you can send an email when pressing the btnMail button</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="send-email.html">sendEmail</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">sendEmail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that makes the user able to send a complaint using mail</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="new-instance.html">newInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">newInstance</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">More</span></a></code>
+<p>Function returns an instance of a More fragment</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

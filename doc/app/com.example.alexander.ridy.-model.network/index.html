@@ -1,0 +1,156 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.example.alexander.ridy.Model.network - app</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">app</a>&nbsp;/&nbsp;<a href="./index.html">com.example.alexander.ridy.Model.network</a><br/>
+<br/>
+<h2>Package com.example.alexander.ridy.Model.network</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-dagger-view-model-injector-component/index.html">DaggerViewModelInjectorComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DaggerViewModelInjectorComponent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-view-model-injector-component/index.html"><span class="identifier">ViewModelInjectorComponent</span></a></code><br/>
+<code><span class="keyword">class </span><span class="identifier">DaggerViewModelInjectorComponent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-view-model-injector-component/index.html"><span class="identifier">ViewModelInjectorComponent</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-endpoint/index.html">Endpoint</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Endpoint</span></code>
+<p>Interface which makes calls to the Database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-injected-view-model/index.html">InjectedViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">InjectedViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>Base class for all ViewModels that require injection through Dagger.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module/index.html">NetworkModule</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule</span></code>
+<p>Module which provides all required dependencies for the network</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-context$app_debug-factory/index.html">NetworkModule_ProvideContext$app_debugFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideContext$app_debugFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><span class="identifier">Context</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-context$app_release-factory/index.html">NetworkModule_ProvideContext$app_releaseFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideContext$app_releaseFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><span class="identifier">Context</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-database$app_debug-factory/index.html">NetworkModule_ProvideDatabase$app_debugFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideDatabase$app_debugFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><a href="../com.example.alexander.ridy.-model.persistence.-ride/-ride-database/index.html"><span class="identifier">RideDatabase</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-database$app_release-factory/index.html">NetworkModule_ProvideDatabase$app_releaseFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideDatabase$app_releaseFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><a href="../com.example.alexander.ridy.-model.persistence.-ride/-ride-database/index.html"><span class="identifier">RideDatabase</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-endpoint$app_debug-factory/index.html">NetworkModule_ProvideEndpoint$app_debugFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideEndpoint$app_debugFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><a href="-endpoint/index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-endpoint$app_release-factory/index.html">NetworkModule_ProvideEndpoint$app_releaseFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideEndpoint$app_releaseFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><a href="-endpoint/index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-ok-http-client$app_debug-factory/index.html">NetworkModule_ProvideOkHttpClient$app_debugFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideOkHttpClient$app_debugFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><span class="identifier">OkHttpClient</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-ok-http-client$app_release-factory/index.html">NetworkModule_ProvideOkHttpClient$app_releaseFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideOkHttpClient$app_releaseFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><span class="identifier">OkHttpClient</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-repository$app_debug-factory/index.html">NetworkModule_ProvideRepository$app_debugFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideRepository$app_debugFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><a href="../com.example.alexander.ridy.-model.persistence.-ride/-ride-repository/index.html"><span class="identifier">RideRepository</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-repository$app_release-factory/index.html">NetworkModule_ProvideRepository$app_releaseFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideRepository$app_releaseFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><a href="../com.example.alexander.ridy.-model.persistence.-ride/-ride-repository/index.html"><span class="identifier">RideRepository</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-retrofit-interface$app_debug-factory/index.html">NetworkModule_ProvideRetrofitInterface$app_debugFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideRetrofitInterface$app_debugFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><span class="identifier">Retrofit</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-network-module_-provide-retrofit-interface$app_release-factory/index.html">NetworkModule_ProvideRetrofitInterface$app_releaseFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NetworkModule_ProvideRetrofitInterface$app_releaseFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span><span class="symbol">&lt;</span><span class="identifier">Retrofit</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-retrofit-client-instance/index.html">RetrofitClientInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RetrofitClientInstance</span></code>
+<p>Class that respresents a retrofitClientInstance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-view-model-injector-component/index.html">ViewModelInjectorComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ViewModelInjectorComponent</span></code>
+<p>Component providing the inject functions for presenters.
+Components act as the bridge between the Modules that know how to provide dependencies
+and the actual objects that require something to be injected.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

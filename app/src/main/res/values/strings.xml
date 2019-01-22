@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Ridy</string>
+
+    <!--Nav-->
+    <string name="ride">Ride</string>
+    <string name="journal">Journal</string>
+    <string name="more">More</string>
+    <string name="deleteAllRides">Delete all rides</string>
+
+    <!--Toolbar-->
+    <string name="vehicleDetails">Vehicle Details</string>
+    <string name="selectVehicle">Select Vehicle</string>
+
+    <!--StartScreen-->
+    <string name="car">Car</string>
+    <string name="bike">Bike</string>
+    <string name="train">(Illustrative)</string>
+
+    <!--VehicleDetailScreen-->
+    <string name="information">Information</string>
+    <string name="work">Are you going to work?</string>
+    <string name="carConsume">How much l/100km does your car consume?</string>
+    <string name="travelAllowance">Travel allowance in eurocent(EX 0.13)</string>
+    <string name="gasoline">Gasoline</string>
+    <string name="save">Save</string>
+    <string-array name="spinnerItems">
+        <item>Super95</item>
+        <item>LPG</item>
+        <item>Diesel</item>
+    </string-array>
+
+    <!--RideScreen-->
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+
+    <string name="build">Build. 2.4</string>
+    <string name="version">Version 6.2</string>
+    <string name="complaints">Complains</string>
+    <string name="emailMe">Email me if you have any complains</string>
+    <string name="sendMail">Send Mail</string>
+
+    <!--JournalScreen-->
+    <string name="distance">Distance:</string>
+    <string name="vehicle">Vehicle:</string>
+    <string name="moneySaved">Money Saved: </string>
+    <string name="rideToWork">Ride To Work: </string>
+
+    <!--NotificationScreen-->
+    <string name="rideSaved">Ride Saved!</string>
+    <string name="rideSavedText">The ride has been saved and the application will redirect you to the first screen.</string>
+    <string name="ok">OK</string>
+
+
+</resources>

@@ -1,0 +1,213 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExecuteRide - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.alexander.ridy.View.fragments.Ride</a>&nbsp;/&nbsp;<a href="./index.html">ExecuteRide</a><br/>
+<br/>
+<h1>ExecuteRide</h1>
+<code><span class="keyword">class </span><span class="identifier">ExecuteRide</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><span class="identifier">OnMapReadyCallback</span><span class="symbol">, </span><span class="identifier">OnRequestPermissionsResultCallback</span></code>
+<p>A Fragment is a section of an Activity, which has its own lifecycle, receives its own input events, can be added or removed while the Activity is running.
+This fragment takes care of representing the journal containing the rides</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-to-select-screen-call-back/index.html">ToSelectScreenCallBack</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ToSelectScreenCallBack</span></code>
+<p>Function used to go the the select vehicle screen</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ExecuteRide</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A Fragment is a section of an Activity, which has its own lifecycle, receives its own input events, can be added or removed while the Activity is running.
+This fragment takes care of representing the journal containing the rides</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="map.html">map</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">map</span><span class="symbol">: </span><span class="identifier">GoogleMap</span></code>
+<p>a map that will be used to for retrieving the location of the user</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="parent.html">parent</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">parent</span><span class="symbol">: </span><a href="-to-select-screen-call-back/index.html"><span class="identifier">ToSelectScreenCallBack</span></a></code>
+<p>variable that makes it able to call the function in the ToSelectScreenCallBack interface</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="ride.html">ride</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">ride</span><span class="symbol">: </span><a href="../../com.example.alexander.ridy.-model.domain/-ride/index.html"><span class="identifier">Ride</span></a></code>
+<p>a variable that represents a ride object</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.View.fragments.Ride.ExecuteRide$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>This method is used to store and restore information about the state of your activity.
+In cases such as orientation changes, closing the app or any other scenario that leads to onCreate() being recalled
+This method has the LocationCallback</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view.html">onCreateView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.View.fragments.Ride.ExecuteRide$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<span class="identifier">LayoutInflater</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.View.fragments.Ride.ExecuteRide$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewGroup</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.View.fragments.Ride.ExecuteRide$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">View</span><span class="symbol">?</span></code>
+<p>onCreateView is called to "inflate" the layout of the fragment,
+i.e. graphic initialization is usually done here.
+It is always called after the onCreate method.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-destroy.html">onDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDestroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>onDestroy() is called before the activity is destroyed. The system invokes this callback either because:
+-the activity is finishing (due to the user completely dismissing the activity or due to finish() being called on the activity), or
+-the system is temporarily destroying the activity due to a configuration change (such as device rotation or multi-window mode)
+The <a href="#">mMap</a> has to be destroyed</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-low-memory.html">onLowMemory</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onLowMemory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>When the phone's memory is low, the background processes will be killed by framework.
+If the last background process is killed, the framework will call onLowMemory of every app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-map-ready.html">onMapReady</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onMapReady</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.View.fragments.Ride.ExecuteRide$onMapReady(com.google.android.gms.maps.GoogleMap)/map">map</span><span class="symbol">:</span>&nbsp;<span class="identifier">GoogleMap</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that will automatically be called when the google map is ready and will call the setUpMap and setLocation function</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-pause.html">onPause</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>The system calls this method as the first indication that the user is leaving
+your activity (though it does not always mean the activity is being destroyed);
+It indicates that the activity is no longer in the foreground (though it may still be visible if the user is in multi-window mode).
+The <a href="#">mMap</a> than has to stop and the <a href="#">fusedLocationClient</a> also</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>If the app continues after the onPause method is called, the onResume method is called.
+It is one of the methods of the activity life cycle.
+It takes care of the action that has to take place when pressed on btnStart
+It takes care of the action that has to take place when pressed on btnStop</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-save-instance-state.html">onSaveInstanceState</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onSaveInstanceState</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.View.fragments.Ride.ExecuteRide$onSaveInstanceState(android.os.Bundle)/outState">outState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Invoked when the activity may be temporarily destroyed, save the instance state here</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-start.html">onStart</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStart</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>When the activity enters the Started state, the system invokes this callback. The onStart() call makes the activity visible to the user,
+as the app prepares for the activity to enter the foreground and become interactive.
+The <a href="#">mMap</a> has to be started</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-stop.html">onStop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>When your activity is no longer visible to the user, it has entered the Stopped state, and the system invokes the onStop() callback.
+This may occur, for example, when a newly launched activitycovers the entire screen. The system may also call onStop() when the
+activity has finished running, and is about to be terminated.
+The <a href="#">mMap</a> has to be stopped</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-location.html">setLocation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setLocation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function that will adjust the camera of the screen to your exact position when it is able to retrieve the last location</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="new-instance.html">newInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">newInstance</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ExecuteRide</span></a></code>
+<p>Function returns an instance of a Execute Ride fragment</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

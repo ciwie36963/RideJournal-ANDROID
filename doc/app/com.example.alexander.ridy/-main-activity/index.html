@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MainActivity - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.alexander.ridy</a>&nbsp;/&nbsp;<a href="./index.html">MainActivity</a><br/>
+<br/>
+<h1>MainActivity</h1>
+<code><span class="keyword">class </span><span class="identifier">MainActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span><span class="symbol">, </span><a href="../../com.example.alexander.ridy.fragments.-ride/-select-vehicle/-to-vehicle-screen-call-back/index.html"><span class="identifier">ToVehicleScreenCallBack</span></a><span class="symbol">, </span><a href="../../com.example.alexander.ridy.-view.fragments.-ride/-vehicle-details/-to-ride-screen-call-back/index.html"><span class="identifier">ToRideScreenCallBack</span></a><span class="symbol">, </span><a href="../../com.example.alexander.ridy.-view.fragments.-ride/-execute-ride/-to-select-screen-call-back/index.html"><span class="identifier">ToSelectScreenCallBack</span></a></code>
+<p>The main activity. This activity takes care of the navigation and the dynamic fragments</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MainActivity</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>The main activity. This activity takes care of the navigation and the dynamic fragments</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="ride.html">ride</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">ride</span><span class="symbol">: </span><a href="../../com.example.alexander.ridy.-view.fragments.-ride/-execute-ride/index.html"><span class="identifier">ExecuteRide</span></a></code>
+<p>variable which represents a ExecuteRide fragment</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="select-vehicle.html">selectVehicle</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">selectVehicle</span><span class="symbol">: </span><a href="../../com.example.alexander.ridy.fragments.-ride/-select-vehicle/index.html"><span class="identifier">SelectVehicle</span></a></code>
+<p>variable which represents a selectVehicle fragment</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="vehicle-details.html">vehicleDetails</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">vehicleDetails</span><span class="symbol">: </span><a href="../../com.example.alexander.ridy.-view.fragments.-ride/-vehicle-details/index.html"><span class="identifier">VehicleDetails</span></a></code>
+<p>variable which represents a vehicleDetails fragment</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="fix-screen.html">fixScreen</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fixScreen</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.MainActivity$fixScreen(android.support.v4.app.Fragment, android.support.v4.app.Fragment, kotlin.String, kotlin.String)/fragmentRemove">fragmentRemove</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.MainActivity$fixScreen(android.support.v4.app.Fragment, android.support.v4.app.Fragment, kotlin.String, kotlin.String)/fragmentNew">fragmentNew</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.MainActivity$fixScreen(android.support.v4.app.Fragment, android.support.v4.app.Fragment, kotlin.String, kotlin.String)/locVarFrag">locVarFrag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.MainActivity$fixScreen(android.support.v4.app.Fragment, android.support.v4.app.Fragment, kotlin.String, kotlin.String)/textToolbar">textToolbar</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Function to switch the screen -&gt; fragment</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="go-to-ride-screen.html">goToRideScreen</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">goToRideScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Callback to go the the ride screen</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="go-to-select-screen.html">goToSelectScreen</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">goToSelectScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Callback to go the the select vehicle screen</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="go-to-vehicle-screen.html">goToVehicleScreen</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">goToVehicleScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Callback to go the the vehicleDetails screen</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.MainActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bundle</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>This method is used to store and restore information about the state of your activity.
+In cases such as orientation changes, closing the app or any other scenario that leads to onCreate() being recalled,</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-fragment.html">removeFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeFragment</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.MainActivity$removeFragment(android.support.v4.app.Fragment)/fragment">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Method to dynamically remove the fragment from an activity</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-fragment.html">setFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setFragment</span><span class="symbol">(</span><span class="identifier" id="com.example.alexander.ridy.MainActivity$setFragment(android.support.v4.app.Fragment, kotlin.Int)/fragment">fragment</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><span class="identifier" id="com.example.alexander.ridy.MainActivity$setFragment(android.support.v4.app.Fragment, kotlin.Int)/int">int</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Method to dynamically set the fragment in an activity</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

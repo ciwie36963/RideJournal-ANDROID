@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:id="@+id/btnCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:background="@drawable/car"
+                android:textColor="#FFFFFF"
+                android:text="@string/car"/>
+
+        <Button
+                android:id="@+id/btnBike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:background="@drawable/bike"
+                android:textColor="#FFFFFF"
+                android:text="@string/bike"/>
+
+        <Button
+                android:id="@+id/btnTrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:background="@drawable/train"
+                android:textColor="#FFFFFF"
+                android:text="@string/train"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
